@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title></title>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Festive&family=Klee+One&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7cf3b9a7d2.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="./styles/styles.css">    
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="title">
+                <h1>Memory Game</h1>
+            </div>
+            <div id="scoreBoard">
+                <div id="timer">
+                    <h3>Timer: <br>
+                        <span class="text" id="time">30</span>
+                    </h3>
+                </div>
+                <div id="attempts">
+                    <h3>Attempts: <br>
+                        <span class="text" id="attempt">0</span>
+                    </h3>
+                </div>
+                <div id="matches">
+                    <h3>Matches: <br>
+                        <span class="text" id="match">0</span>
+                    </h3>
+                </div>
+            </div>
+            <div id="buttons">
+                <button id="start">Start Game</button>
+                <button id="reset">Reset Game</button>
+            </div>
+            <button id='muteSound'>
+                <i class="fas fa-volume-up"></i>
+                <i class="fas fa-volume-mute"></i>
+            </button>
+            <div id="gameBoard"></div> <!-- Content is created dynamically with JavaScript, See JS file for cards etc -->
+        </div>
+        <script src="./scripts/index.js"></script>
+    </body>
+</html>
