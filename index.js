@@ -1,51 +1,51 @@
 let cardArray = [
 	{
 		name: 'Card A',
-		img: `./images/tree.png`,
+		img: `tree.png`,
 	},
 	{
 		name: 'Card A',
-		img: `./images/tree.png`,
+		img: `tree.png`,
 	},
 	{
 		name: 'Card B',
-		img: `./images/mask.png`,
+		img: `mask.png`,
 	},
 	{
 		name: 'Card B',
-		img: `./images/mask.png`,
+		img: `mask.png`,
 	},
 	{
 		name: 'Card C',
-		img: `./images/jester.jpg`,
+		img: `jester.jpg`,
 	},
 	{
 		name: 'Card C',
-		img: `./images/jester.jpg`,
+		img: `jester.jpg`,
 	},
 	{
 		name: 'Card D',
-		img: `./images/hat.png`,
+		img: `hat.png`,
 	},
 	{
 		name: 'Card D',
-		img: `./images/hat.png`,
+		img: `hat.png`,
 	},
 	{
 		name: 'Card E',
-		img: `./images/fleur_de_lis.png`,
+		img: `fleur_de_lis.png`,
 	},
 	{
 		name: 'Card E',
-		img: `./images/fleur_de_lis.png`,
+		img: `fleur_de_lis.png`,
 	},
 	{
 		name: 'Card F',
-		img: `./images/crown.png`,
+		img: `crown.png`,
 	},
 	{
 		name: 'Card F',
-		img: `./images/crown.png`,
+		img: `crown.png`,
 	}
 ];
 
@@ -75,7 +75,7 @@ function populateGameBoard() {
 
         card.setAttribute('data-id', i);
         cardImg.setAttribute('src', cardArray[i].img);
-        cardBackImg.setAttribute('src', './images/card_back.jpg');
+        cardBackImg.setAttribute('src', 'card_back.jpg');
     
         cardFront.appendChild(cardImg);
         cardBack.appendChild(cardBackImg);
@@ -273,7 +273,7 @@ function playAgain() {
 
 //background music
 function playBackgroundMusic() {
-  var audio = new Audio('./audio/Monkeys-Spinning-Monkeys-[AudioTrimmer.com] (1).mp3');
+  var audio = new Audio('Monkeys-Spinning-Monkeys-[AudioTrimmer.com] (1).mp3');
   audio.play();
 
   //turn off background music
@@ -296,12 +296,12 @@ function playBackgroundMusic() {
 
 //matched sound
 function playMatchedSound() {
-	var matchedSound = new Audio('./audio/mixkit-achievement-bell-600 (online-audio-converter.com).mp3');
+	var matchedSound = new Audio('mixkit-achievement-bell-600 (online-audio-converter.com).mp3');
 	matchedSound.play();
 };
 
 //not matched sound
 function playNoMatchSound() {
-	var notMatchedSound = new Audio('./audio/mixkit-apartment-buzzer-bell-press-932 (online-audio-converter.com).mp3');
+	var notMatchedSound = new Audio('mixkit-apartment-buzzer-bell-press-932 (online-audio-converter.com).mp3');
 	notMatchedSound.play();
 }
