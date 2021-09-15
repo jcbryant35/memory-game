@@ -61,6 +61,9 @@
 
 .card.flip {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+
 }
 
 .cardFront, .card-back {
@@ -71,6 +74,12 @@
     align-items: center;
     position: absolute;
     backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: rotateY(0deg); 
+    -webkit-transform: rotateY(0deg); 
+    -moz-transform: rotateY(0deg); 
+
 }
 
 .card-back-image {
@@ -80,6 +89,10 @@
 
 .card-front {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(0deg);
+    z-index: -1;
+
 }
 
 .image {
