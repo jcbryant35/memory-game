@@ -312,10 +312,11 @@ margin-top: 50px;
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 15%;
+        height: auto; /*15%;*/
         left: 0;
         top: 90%; 85%
         z-index: 1;
+        border: 1px solid red;
     }
     #start {
         width: 100%;
