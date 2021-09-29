@@ -128,7 +128,7 @@ function checkMatch() {
     let cardTwo = selectedCards[1];
 	
     //only 2 cards can be clicked at a time until resolved with match or no match
-    if(len === 2) 
+    if(len === 2) {
         gameBoard.style.pointerEvents = 'none';    
     }
 	
