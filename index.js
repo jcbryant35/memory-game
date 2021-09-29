@@ -174,7 +174,7 @@ function checkMatch() {
             resetVariables();
 		
             //make cards clickable again
-            gameBoard.style.pointerEvents = 'none';
+            gameBoard.style.pointerEvents = 'auto';
 
         }, 1000);
 
